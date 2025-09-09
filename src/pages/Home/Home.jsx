@@ -29,7 +29,7 @@ const Home = () => {
     <div className="home">
       {/* Hero Section */}
       <section className="hero" style={{
-        backgroundImage: `linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%), url(${heroImages[currentImageIndex]})`,
+        backgroundImage: `linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(9, 3, 87, 1) 100%), url(${heroImages[currentImageIndex]})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
