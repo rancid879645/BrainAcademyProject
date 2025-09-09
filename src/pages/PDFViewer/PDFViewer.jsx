@@ -13,7 +13,7 @@ const PDFViewer = () => {
     {
       name: 'Horario',
       url: '/test.pdf',
-      description: 'Documento HTML de ejemplo local'
+      description: 'Horario del dia de hoy'
     },
     {
       name: 'PDF de Ejemplo Simple',
@@ -95,10 +95,9 @@ const PDFViewer = () => {
           </div>
           
           <div className="example-docs">
-            <h3>Documentos de Ejemplo:</h3>
+            <h3>Documentos:</h3>
             <p className="docs-description">
-              Estos son documentos de prueba para demostrar la funcionalidad. 
-              Reemplázalos con los documentos reales de tu colegio.
+              Aqui encontraras los documentos importantes de nuestra institucion
             </p>
             <div className="docs-grid">
               {exampleDocs.map((doc, index) => (
@@ -195,7 +194,7 @@ const PDFViewer = () => {
           </div>
         )}
 
-        {/* Instructions */}
+        {/* Instructions
         {!pdfUrl && (
           <div className="instructions">
             <div className="instruction-card">
@@ -233,7 +232,7 @@ const PDFViewer = () => {
               </div>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   )
