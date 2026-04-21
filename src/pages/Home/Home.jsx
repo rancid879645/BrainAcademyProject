@@ -146,8 +146,9 @@ const Home = () => {
         <div className="container">
           <div className="cta-content">
             <h2>¿Listo para formar parte de nuestra familia?</h2>
+            <span className="cta-accent" aria-hidden="true" />
             <p>
-              Descubre todos nuestros programas académicos y documentos 
+              Descubre todos nuestros programas académicos y documentos
               informativos en nuestra sección de documentos.
             </p>
             <Link to="/documentos" className="btn btn-primary">

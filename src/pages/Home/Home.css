@@ -256,23 +256,57 @@
 
 /* CTA Section */
 .cta {
-  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+  background: linear-gradient(135deg, #667eea 0%, #090357 100%);
   color: white;
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(102, 126, 234, 0.25) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.cta .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .cta-content h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.cta-accent {
+  display: block;
+  width: 56px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  border-radius: 2px;
+  margin: 1.25rem auto 1.75rem;
 }
 
 .cta-content p {
-  font-size: 1.25rem;
-  opacity: 0.9;
-  margin-bottom: 2rem;
-  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2.5rem;
+  max-width: 560px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -322,9 +356,9 @@
   .cta-content h2 {
     font-size: 2rem;
   }
-  
+
   .cta-content p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 }
 
